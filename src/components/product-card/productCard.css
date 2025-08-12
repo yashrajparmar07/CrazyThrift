@@ -1,5 +1,5 @@
 .product-card {
-  width: 170px;
+  width: 46vw;
   line-height: 0px;
   font-size: 13px;
   cursor: pointer;
@@ -33,8 +33,8 @@
 }
 
 .product-card img {
-  width: 170px;
-  height: 200px;
+  width: 100%;
+  height: 50vw;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -98,22 +98,22 @@
 
 @media (max-width: 450px) {
   .product-card {
-    width: 140px;
+    width: 46vw;
   }
 
   .product-card img {
-    width: 140px;
-    height: 150px;
+    width: 100%;
+    height: 50vw;
   }
 }
 
 @media (max-width: 350px) {
   .product-card {
-    width: 190px;
+    width: 90vw;
   }
 
   .product-card img {
-    width: 190px;
-    height: 210px;
+    width: 100%;
+    height: 65vw;
   }
 }
