@@ -2,24 +2,105 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 :root {
-  --primary-color: #e80071;
-  --primary-dark: #ba045c;
-  --primary-light: rgb(240, 206, 206);
-  --primary-lighter: rgb(253, 239, 245);
-  --primary-lightest: rgb(252, 244, 247);
+  /* Cyberpunk-inspired palette */
+  --primary-color: #00e5ff; /* neon cyan */
+  --primary-dark: #7c00ff; /* electric purple */
+  --primary-light: #b8f6ff;
+  --primary-lighter: #e6fbff;
+  --primary-lightest: #f3fdff;
 
   --gray: rgb(139, 138, 138);
   --gray-lighter: rgb(233, 232, 232);
   --gray-light: rgb(242, 239, 239);
   --gray-dark: rgb(93, 91, 91);
-  --white-color: white;
+  --white-color: #ffffff;
 
-  --black: black;
+  --black: #000000;
   --black-light: rgb(46, 46, 46);
+
+  /* Gradients and effects */
+  --gradient-primary: linear-gradient(135deg, #00e5ff 0%, #7c00ff 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #14f1ff 0%, #8b1dff 100%);
+  --focus-cyan: rgba(0, 229, 255, 0.35);
+  --focus-purple: rgba(124, 0, 255, 0.2);
+  --shadow-cyan: rgba(0, 229, 255, 0.15);
+  --shadow-purple: rgba(124, 0, 255, 0.25);
+
+  accent-color: var(--primary-color);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+}
+
+/* Smooth interactive transitions */
+a, button, input, select, textarea,
+.product-card, .nav .nav-navigate i {
+  transition: background-color 0.25s ease, color 0.25s ease,
+              box-shadow 0.25s ease, transform 0.2s ease,
+              border-color 0.25s ease, opacity 0.25s ease;
+}
+
+/* Neon focus ring */
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 3px var(--focus-cyan), 0 0 0 6px var(--focus-purple);
+  border-color: var(--primary-color);
+}
+
+/* Primary gradient buttons */
+.login-button,
+.empty-cart-items button,
+.price-card button,
+.wishlist-btn,
+.profile.address .add-address,
+.wishlist-card .buttons button:nth-child(1),
+.product-card button,
+.wishlist-cart .wishlist-btn,
+.address-form button,
+.checkout-details button {
+  background-image: var(--gradient-primary) !important;
+  border: none !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
+}
+
+.login-button:hover,
+.empty-cart-items button:hover,
+.price-card button:hover,
+.wishlist-btn:hover,
+.profile.address .add-address:hover,
+.wishlist-card .buttons button:nth-child(1):hover,
+.product-card button:hover,
+.wishlist-cart .wishlist-btn:hover,
+.address-form button:hover,
+.checkout-details button:hover {
+  background-image: var(--gradient-primary-hover) !important;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 10px 28px var(--shadow-purple), 0 0 16px var(--shadow-cyan);
+}
+
+/* Outline-style actions → subtle neon */
+.address-btn button,
+.wishlist-card .buttons button:nth-child(2),
+.wishlist-cart .cart-btn,
+.text-filter button,
+.cart .clear-cart {
+  background: transparent !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.address-btn button:hover,
+.wishlist-card .buttons button:nth-child(2):hover,
+.wishlist-cart .cart-btn:hover,
+.text-filter button:hover,
+.cart .clear-cart:hover {
+  background-image: var(--gradient-primary) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }

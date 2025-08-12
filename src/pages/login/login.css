@@ -45,7 +45,7 @@
 
 .login-button {
   width: 100%;
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   color: var(--white-color);
   padding: 7px;
@@ -53,10 +53,11 @@
   font-size: 15px;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .login-button:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 .login-button.guest {
@@ -66,7 +67,7 @@
 }
 
 .login-button.guest:hover {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   color: var(--white-color);
 }
 

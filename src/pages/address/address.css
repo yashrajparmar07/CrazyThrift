@@ -35,14 +35,15 @@
     width: 100%;
     margin: 20px 0;
     padding: 10px 0;
-    background-color: var(--primary-color);
+    background-image: var(--gradient-primary);
     color: var(--white-color);
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 .address-form button:hover, .checkout-details button:hover {
-    background-color: var(--primary-dark);
+    background-image: var(--gradient-primary-hover);
 }
 
 .address-btn {
@@ -56,10 +57,12 @@
     background-color: var(--white-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 .address-btn button:hover {
-    background-color: var(--primary-color);
+    background-image: var(--gradient-primary);
     color: var(--white-color);
+    transform: translateY(-1px) scale(1.02);
 }
 .address-data input {
     margin: 4px 0;

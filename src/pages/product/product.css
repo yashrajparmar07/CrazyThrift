@@ -16,6 +16,10 @@
   font-weight: 600;
 }
 
+.text span {
+  text-shadow: 0 0 10px var(--shadow-cyan);
+}
+
 .loader {
   width: 100%;
   display: flex;
@@ -37,6 +41,12 @@
   padding: 8px 15px;
   border-radius: 10px;
   display: none;
+}
+
+.text-filter button:hover {
+  background-image: var(--gradient-primary);
+  color: #ffffff;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .products {

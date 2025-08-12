@@ -15,8 +15,8 @@ export const Home = () => {
       <div className="hero">
         <img src={header} alt="" />
         <div className="header">
-          <h1>Level up your style with</h1>
-          <h1> our collections</h1>
+          <h1>India's Best Thrift Store</h1>
+          <h1>CrazyThrifts</h1>
           <p>
             <NavLink to="/products">
               Shop Now <i class="fa-solid fa-arrow-right"></i>

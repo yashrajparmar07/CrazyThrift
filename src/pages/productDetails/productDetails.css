@@ -67,17 +67,18 @@
 }
 
 .wishlist-cart .wishlist-btn {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   color: var(--white-color);
   padding: 10px 15px;
   font-size: 14px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .wishlist-cart .wishlist-btn:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 .wishlist-cart .cart-btn {

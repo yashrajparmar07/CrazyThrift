@@ -27,9 +27,9 @@
 }
 
 .product-card:hover {
-  transform: scale(1.03);
-  transition: transform 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transform: scale(1.03) translateY(-2px);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 26px var(--shadow-purple), 0 0 14px var(--shadow-cyan);
 }
 
 .product-card img {
@@ -76,18 +76,17 @@
 .product-card button {
   padding: 8px 0;
   margin: 10px;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-image: var(--gradient-primary);
+  border: none;
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .product-card button:hover {
-  background-color: var(--white-color);
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  font-weight: 700;
+  background-image: var(--gradient-primary-hover);
+  transform: translateY(-1px) scale(1.02);
 }
 
 .add-wishlist {

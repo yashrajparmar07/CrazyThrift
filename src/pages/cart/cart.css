@@ -19,7 +19,7 @@
 .clear-cart {
   width: max-content;
   margin: 10px 50px;
-  background-color: transparent;
+  background: transparent;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   padding: 10px 15px;
@@ -50,19 +50,18 @@
   color: var(--gray);
 }
 .empty-cart-items button {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   color: var(--white-color);
   padding: 13px 17px;
   font-size: 17px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 .empty-cart-items button:hover {
-  background-color: transparent;
-  color: var(--primary-color);
-  border-radius: 5px;
-  border: 1px solid var(--primary-color);
+  background-image: var(--gradient-primary-hover);
+  transform: translateY(-1px) scale(1.02);
 }
 
 /* Cart card */
@@ -147,26 +146,28 @@
   width: 100%;
   margin: 15px 0;
   padding: 10px 0;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-image: var(--gradient-primary);
+  border: none;
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 .price-card button:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 .wishlist-btn {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   color: var(--white-color);
   border: none;
   padding: 7px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 .wishlist-btn:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 @media (max-width: 1350px) {

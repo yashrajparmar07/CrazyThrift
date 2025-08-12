@@ -1,10 +1,11 @@
 footer {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   margin-bottom: 0;
   padding: 0 70px;
   padding-bottom: 2px;
   font-size: 12px;
   color: var(--white-color);
+  box-shadow: 0 -8px 22px var(--shadow-purple);
 }
 
 footer .footer-div {
@@ -49,8 +50,9 @@ footer .footer-div {
 }
 
 .footer-div a:hover {
-  color: var(--primary-light);
-  transform: scale(1.2);
+  color: #e6fbff;
+  transform: scale(1.2) translateY(-1px);
+  text-shadow: 0 0 8px var(--primary-color);
 }
 
 footer p {

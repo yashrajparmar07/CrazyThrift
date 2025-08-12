@@ -24,20 +24,19 @@
 }
 
 .empty-wishlist button {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   color: var(--white-color);
   padding: 13px 17px;
   font-size: 17px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .empty-wishlist button:hover {
-  background-color: transparent;
-  color: var(--primary-color);
-  border-radius: 5px;
-  border: 1px solid var(--primary-color);
+  background-image: var(--gradient-primary-hover);
+  transform: translateY(-1px) scale(1.02);
 }
 
 /* Wishlist card */
@@ -106,12 +105,14 @@
 }
 
 .wishlist-card .buttons button:nth-child(1) {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   color: var(--white-color);
+  border: none;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .wishlist-card .buttons button:nth-child(1):hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 .wishlist-card .buttons button:nth-child(2) {

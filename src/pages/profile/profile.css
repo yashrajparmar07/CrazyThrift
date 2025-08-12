@@ -55,15 +55,16 @@ h1 {
 }
 
 .profile.address .add-address {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   margin: 10px 0 15px;
   color: var(--white-color);
   padding: 10px 20px;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .profile.address .add-address:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 .address-container button {
@@ -74,11 +75,13 @@ h1 {
   padding: 7px 13px;
   cursor: pointer;
   margin: 10px 5px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
 .address-container button:hover {
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   color: var(--white-color);
+  transform: translateY(-1px) scale(1.02);
 }
 
 @media (max-width: 400px) {

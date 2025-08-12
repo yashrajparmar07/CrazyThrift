@@ -44,16 +44,17 @@
   margin: 20px 0 10px;
   width: 100%;
   padding: 10px 0;
-  background-color: var(--primary-color);
+  background-image: var(--gradient-primary);
   border: none;
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
   width: 80%;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 .address-card button:hover {
-  background-color: var(--primary-dark);
+  background-image: var(--gradient-primary-hover);
 }
 
 @media (max-width: 700px) {

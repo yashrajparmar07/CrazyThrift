@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router";
-import { logo } from "../../assets";
 import "./footer.css";
 
 export const Footer = () => {
@@ -8,7 +7,7 @@ export const Footer = () => {
     <footer>
       <div className="footer-div">
         <div className="logo-footer">
-          <img src={logo} alt="" />
+          <span className="brand">CrazyThrifts</span>
           <p>
             Specializes in providing high-quality, stylish productsfor your
             wardrobe
@@ -50,7 +49,7 @@ export const Footer = () => {
       </div>
       <hr />
       <p>
-        Copyright <i class="fa-regular fa-copyright"></i>2023 Attire. All rights
+        Copyright <i class="fa-regular fa-copyright"></i>2023 CrazyThrift store. All rights
         reserved.
       </p>
     </footer>

@@ -35,8 +35,10 @@
 }
 
 .category div p:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-image: var(--gradient-primary);
+  color: #ffffff;
   border-radius: 5px;
+  box-shadow: 0 8px 22px var(--shadow-purple), 0 0 12px var(--shadow-cyan);
 }
 
 @media (max-width: 1200px) {

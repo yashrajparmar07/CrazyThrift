@@ -1,6 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { logo } from "../../assets";
 import "./navbar.css";
 import { useAuth } from "../../context/authContext";
 import { useFilters } from "../../context/filterContext";
@@ -33,7 +32,7 @@ export const NavBar = () => {
       </div>
       <div className="nav">
         <div className="navbar">
-          <img src={logo} alt="logo" onClick={() => navigate("/")} />
+          <span className="brand" onClick={() => navigate("/")}>CrazyThrifts</span>
           <div className="nav-options">
             <p>
               <NavLink style={activeStyle} to="/">
