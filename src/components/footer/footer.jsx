@@ -23,27 +23,9 @@ export const Footer = () => {
 
           <div className="socials">
             <h3>CONTACTS: </h3>
-            <a
-              href="https://github.com/sweta1308"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa-brands fa-github fa-lg"></i> Github
-            </a>
-            <a
-              href="https://twitter.com/AgarwallaSweta"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa-brands fa-twitter fa-lg"></i> Twitter
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sweta-agarwalla-45aa2324a/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa-brands fa-linkedin fa-lg"></i> LinkedIn
-            </a>
+            <span><i class="fa-brands fa-github fa-lg"></i> Github</span>
+            <span><i class="fa-brands fa-twitter fa-lg"></i> Twitter</span>
+            <span><i class="fa-brands fa-linkedin fa-lg"></i> LinkedIn</span>
           </div>
         </div>
       </div>
