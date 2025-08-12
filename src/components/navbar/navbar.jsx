@@ -107,29 +107,6 @@ export const NavBar = () => {
             }}
           />
         </div>
-        {/* Mobile Bottom Navigation */}
-        <div className="mobile-bottom-nav">
-          <button onClick={() => navigate("/")} aria-label="Home">
-            <i className="fa-solid fa-house"></i>
-            <span>Home</span>
-          </button>
-          <button onClick={() => navigate("/products")} aria-label="Shop">
-            <i className="fa-solid fa-store"></i>
-            <span>Shop</span>
-          </button>
-          <button onClick={() => navigate("/cart")} aria-label="Cart">
-            <i className="fa-solid fa-cart-shopping"></i>
-            <span>Cart</span>
-          </button>
-          <button onClick={() => navigate("/wishlist")} aria-label="Wishlist">
-            <i className="fa-solid fa-heart"></i>
-            <span>Wish</span>
-          </button>
-          <button onClick={() => navigate(token ? "/profile" : "/login")} aria-label="Account">
-            <i className="fa-regular fa-user"></i>
-            <span>Me</span>
-          </button>
-        </div>
       </div>
     </>
   );
